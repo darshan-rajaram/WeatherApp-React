@@ -1,0 +1,62 @@
+/* src/History.css */
+
+.history {
+  background-color: #fff8e1; /* Light yellow background for distinction */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Half width to sit side-by-side with forecast */
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.history .history-cards {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.history-card {
+  background-color: #fef9e7;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+}
+
+.history-card p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.history-card .date {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.history-card .temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.history-card .description {
+  font-size: 1rem;
+  color: #555;
+}

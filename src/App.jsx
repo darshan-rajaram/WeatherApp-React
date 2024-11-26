@@ -1,13 +1,10 @@
 import "./App.css";
-import LocationSearchBar from "./Components/LocationSearchBar/LocationSearchBar.jsx";
+import WeatherDashboard from "./Components/WeatherDashboard/WeatherDashboard";
 
 function App() {
-  function handleSearch(location) {
-    console.log("Location: " + location);
-  }
   return (
     <div className="App">
-      <LocationSearchBar onSearch={handleSearch} />
+      <WeatherDashboard />
     </div>
   );
 }

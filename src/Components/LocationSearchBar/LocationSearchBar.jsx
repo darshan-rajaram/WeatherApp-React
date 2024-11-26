@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 
 export default function LocationSearchBar({ onSearch }) {
   const [location, setLocation] = useState("");
+
+  function isValidInput(input) {
+    return /^[a-zA-Z0-9]+(?: [a-zA-Z0-9]+)*$/.test(input.trim());
+  }
   function handleInputChange(e) {
     setLocation(e.target.value);
   }
@@ -21,7 +25,11 @@ export default function LocationSearchBar({ onSearch }) {
           value={location}
           onChange={handleInputChange}
         />
-        <button type="submit" className="search-button">
+        <button
+          type="submit"
+          className="search-button"
+          disabled={!isValidInput(location)}
+        >
           Search
         </button>
       </form>
