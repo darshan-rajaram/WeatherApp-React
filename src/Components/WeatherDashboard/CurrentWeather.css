@@ -20,6 +20,13 @@
   color: #333;
 }
 
+.current-weather .location {
+  font-size: 1.2rem;
+  color: #007bff; /* Blue color for the location */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .current-weather p {
   font-size: 1.2rem;
   color: #555;

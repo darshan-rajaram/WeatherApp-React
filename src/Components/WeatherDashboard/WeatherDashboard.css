@@ -66,3 +66,30 @@
   background-color: #ffffff;
   margin-right: 10px; /* Ensures there's some space between the forecast and screen edge */
 }
+
+/* Rotating loader style */
+.loader {
+  border: 6px solid #f3f3f3; /* Light gray background */
+  border-top: 6px solid #3498db; /* Blue color for the rotating part */
+  border-radius: 50%; /* Make it a circle */
+  width: 40px; /* Size of the loader */
+  height: 40px; /* Size of the loader */
+  animation: spin 1s linear infinite; /* Infinite spin animation */
+  margin: 0 auto; /* Center the loader */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.weather-dashboard .search-container {
+  margin-bottom: 30px; /* Adds space between search bar and weather data */
+}
+
+.weather-content {
+  padding-top: 20px; /* Adds space above the weather content */
+}
